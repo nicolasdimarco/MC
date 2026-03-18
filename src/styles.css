@@ -34,7 +34,7 @@ img, svg { display: block; }
 .section > .shell { position: relative; z-index: 1; }
 .section--hero {
   background:
-    linear-gradient(180deg, rgba(246, 244, 238, 0.88), rgba(246, 244, 238, 0.94)),
+    linear-gradient(180deg, rgba(246, 244, 238, 0.72), rgba(246, 244, 238, 0.82)),
     url('../assets/fondo-1.jpg') center/cover no-repeat;
 }
 .section--services {
@@ -181,10 +181,11 @@ img, svg { display: block; }
   position: relative;
   overflow: hidden;
   padding: 1.1rem;
+  text-align: center;
   border-radius: var(--radius);
-  border: 1px solid rgba(17, 141, 146, 0.12);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(17, 141, 146, 0.12));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(17, 141, 146, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(17, 141, 146, 0.22));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.68);
 }
 .stat::after {
   content: '';
@@ -201,8 +202,8 @@ img, svg { display: block; }
   animation-play-state: running;
   opacity: 1;
 }
-.stat strong { display: block; font-size: clamp(1.5rem, 5vw, 2.6rem); color: var(--ink); }
-.stat span { color: var(--muted); line-height: 1.5; }
+.stat strong { display: block; font-size: clamp(1.5rem, 5vw, 2.6rem); color: var(--ink); text-align: center; }
+.stat span { color: var(--muted); line-height: 1.5; text-align: center; }
 
 @keyframes panorama-sheen {
   0%, 100% { transform: translateX(-130%); }
