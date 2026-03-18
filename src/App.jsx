@@ -339,7 +339,6 @@ export default function App() {
               <div className="benefits-grid">
                 {impacts.map(([title, description]) => (
                   <article key={title} className="benefit-card">
-                    <div className="card-tag">Impacto</div>
                     <h3>{title}</h3>
                     <p>{description}</p>
                   </article>
