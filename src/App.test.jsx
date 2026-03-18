@@ -19,10 +19,12 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /\+54 9 2972433181/i })).toBeInTheDocument();
     expect(screen.getAllByRole('link', { name: /servicios/i }).length).toBeGreaterThan(0);
     expect(screen.getAllByRole('link', { name: /hoja de ruta/i }).length).toBeGreaterThan(0);
+    expect(screen.getAllByRole('link', { name: /impacto esperado/i }).length).toBeGreaterThan(0);
     expect(screen.getByRole('heading', { name: /hoja de ruta/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /impacto esperado para meliquina/i })).toBeInTheDocument();
   });
 
-  it('mantiene hoja de ruta antes de servicios en la navegación', () => {
+  it('mantiene el orden correcto de navegación incluyendo impacto esperado', () => {
     render(<App />);
 
     const desktopNav = screen.getByRole('navigation', { name: /navegación principal/i });
@@ -32,6 +34,7 @@ describe('App', () => {
       'Quiénes somos',
       'Hoja de ruta',
       'Servicios',
+      'Impacto esperado',
       'Contacto',
     ]);
   });

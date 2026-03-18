@@ -5,6 +5,7 @@ const navItems = [
   { href: '#quienes-somos', label: 'Quiénes somos' },
   { href: '#etapas-proyecto', label: 'Hoja de ruta' },
   { href: '#servicios', label: 'Servicios' },
+  { href: '#impacto-esperado', label: 'Impacto esperado' },
   { href: '#contacto', label: 'Contacto' },
 ];
 
@@ -275,18 +276,6 @@ export default function App() {
               </div>
             </div>
 
-            <div className="section-group">
-              <h2 className="group-title">Impacto esperado</h2>
-              <div className="benefits-grid">
-                {impacts.map(([title, description]) => (
-                  <article key={title} className="benefit-card">
-                    <div className="card-tag">Impacto</div>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 
@@ -326,6 +315,31 @@ export default function App() {
               <div className="services-grid">
                 {serviceCards.map(([title, description]) => (
                   <article key={title} className="service-card">
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="impacto-esperado" className="section section--impact">
+          <div className="shell">
+            <div className="section-intro section-intro--compact">
+              <div className="eyebrow">Impacto esperado</div>
+              <h2 className="section-title">Impacto esperado para Meliquina</h2>
+              <p className="section-subtitle">
+                El objetivo es consolidar una gestión local de residuos que reduzca traslados,
+                fortalezca la separación en origen y multiplique el valor ambiental y comunitario.
+              </p>
+            </div>
+
+            <div className="section-group">
+              <div className="benefits-grid">
+                {impacts.map(([title, description]) => (
+                  <article key={title} className="benefit-card">
+                    <div className="card-tag">Impacto</div>
                     <h3>{title}</h3>
                     <p>{description}</p>
                   </article>

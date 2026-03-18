@@ -40,6 +40,11 @@ img, svg { display: block; }
 .section--services {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(232, 242, 234, 0.72));
 }
+.section--impact {
+  background: linear-gradient(180deg, rgba(246, 244, 238, 0.96), rgba(232, 242, 234, 0.82));
+  border-top: 1px solid rgba(10, 79, 66, 0.06);
+  padding: 7rem 0;
+}
 .section--stages {
   background: linear-gradient(180deg, rgba(232, 242, 234, 0.96), rgba(246, 244, 238, 0.88));
   border-top: 1px solid rgba(10, 79, 66, 0.06);
@@ -221,6 +226,29 @@ img, svg { display: block; }
 .services-grid, .steps-grid, .benefits-grid, .contact-points { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .timeline-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .service-card, .step-card, .benefit-card, .contact-card, .timeline-card { padding: 1.45rem; }
+.benefit-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(232, 242, 234, 0.84));
+  border: 1px solid rgba(17, 141, 146, 0.14);
+  box-shadow: 0 18px 40px rgba(10, 79, 66, 0.1);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.benefit-card:hover, .benefit-card:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(17, 141, 146, 0.24);
+  box-shadow: 0 24px 48px rgba(10, 79, 66, 0.14);
+}
+.section--impact .section-intro {
+  max-width: 52rem;
+}
+.section--impact .section-group {
+  margin-top: 2.5rem;
+}
+.section--impact .benefits-grid {
+  gap: 1.25rem;
+}
+.section--impact .card-tag {
+  background: linear-gradient(135deg, rgba(130, 174, 63, 0.2), rgba(17, 141, 146, 0.14));
+}
 .timeline-card {
   position: relative;
   overflow: hidden;
@@ -326,6 +354,7 @@ img, svg { display: block; }
   .hero-grid, .two-col, .mini-grid, .contact-grid, .contact-grid--hero, .services-grid, .steps-grid, .benefits-grid, .contact-points, .timeline-grid { grid-template-columns: 1fr; }
   .stat-grid { grid-template-columns: 1fr; }
   .section { padding: 5rem 0; }
+  .section--impact { padding: 5.5rem 0; }
 }
 
 @media (max-width: 640px) {
