@@ -5,25 +5,25 @@ const navItems = [
   { href: "#la-cooperativa", label: "La cooperativa" },
   { href: "#etapas-proyecto", label: "Plan estratégico" },
   { href: "#servicios", label: "Servicios" },
-  { href: "#impacto-esperado", label: "Impacto esperado" },
+  { href: "#impacto", label: "Impacto" },
   { href: "#contacto", label: "Contacto" },
 ];
 
 const serviceCards = [
   [
-    "Hospedaje",
+    "Residuos de Hospedaje",
     "Recolección de residuos en alojamientos para acompañar el crecimiento turístico con una gestión más ordenada y responsable.",
   ],
   [
-    "Gastronomía",
+    "Residuos Gastronómicos",
     "Servicio pensado para establecimientos gastronómicos, con logística adaptada a los volúmenes y dinámicas de temporada.",
   ],
   [
-    "Obras",
+    "Restos de Obra",
     "Retiro de residuos de obra con foco en separación, trazabilidad y reducción del impacto ambiental local.",
   ],
   [
-    "Podas",
+    "Restos de Poda",
     "Recolección de restos de poda con opción de chipeado in situ para disminuir traslados y aprovechar recursos.",
   ],
 ];
@@ -217,7 +217,7 @@ function Header() {
               alt="Logo de Meliquina Circular"
             />
             <div className="brand-copy">
-              <span>Economía circular</span>
+              <span>Cooperativa de Servicios</span>
               <strong>Meliquina Circular</strong>
             </div>
           </a>
@@ -259,7 +259,7 @@ export default function App() {
       <Header />
 
       <main>
-        <section id="la cooperativa" className="section section--hero">
+        <section id="la-cooperativa" className="section section--hero">
           <div className="shell">
             <div className="section-intro">
               <div className="eyebrow">La cooperativa</div>
@@ -286,7 +286,7 @@ export default function App() {
                   Conocer servicios
                 </a>
                 <a className="button button-secondary" href="#contacto">
-                  Quiero colaborar
+                  Quiero participar
                 </a>
               </div>
             </div>
@@ -385,7 +385,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="impacto-esperado" className="section section--impact">
+        <section id="impacto" className="section section--impact">
           <div className="shell">
             <div className="section-intro section-intro--compact">
               <div className="eyebrow">Impacto esperado</div>
