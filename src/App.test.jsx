@@ -34,7 +34,9 @@ describe("App", () => {
       screen.getByRole("heading", { name: /Plan estratégico/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /impacto esperado para meliquina/i }),
+      screen.getByRole("heading", {
+        name: /Proyección de cambios para Meliquina/i,
+      }),
     ).toBeInTheDocument();
   });
 
