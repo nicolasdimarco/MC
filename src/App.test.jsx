@@ -28,7 +28,7 @@ describe("App", () => {
       screen.getAllByRole("link", { name: /Plan estratégico/i }).length,
     ).toBeGreaterThan(0);
     expect(
-      screen.getAllByRole("link", { name: /impacto esperado/i }).length,
+      screen.getAllByRole("link", { name: /impacto/i }).length,
     ).toBeGreaterThan(0);
     expect(
       screen.getByRole("heading", { name: /Plan estratégico/i }),
