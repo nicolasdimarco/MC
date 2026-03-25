@@ -50,7 +50,7 @@ describe("App", () => {
       "La cooperativa",
       "Plan estratégico",
       "Servicios",
-      "Impacto esperado",
+      "Impacto",
       "Contacto",
     ]);
   });
